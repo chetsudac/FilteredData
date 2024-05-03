@@ -4,35 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Final Project Title</title>
+    <title>CAMERA EAT FIRST!</title>
 
     <link rel="stylesheet" type="text/css" href="./reset.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-
+    <link rel="stylesheet" type="text/css" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-  
+  <nav> 
+      <div class="head">
+          <div class="title">CAMERA EAT FIRST!</div>
+      </div>
+     
     <main>
-      <div class="filter">
-        <div class="filter">filter:</div>
-        <button id="LIFE">LIFE</button>
-        <button id="SAD">SAD</button>
-        <button id="INLOVE">INLOVE</button>
-        <button id="ENG">ENG</button>
-        <button id="TH">TH</button>
-        <button id="KR">KR</button>
-        <button id="all">reset</button>
-    </div>
-    
-    <hr> 
-    
-    </div>
-        <div id="lyrics" class="flex-container"></div>
-    </div>
+
+      <audio id="shutter" src="./assets/shutter.mp3"></audio>
+
+    <div class="filters">
+    <div class="filter">filter:</div>
+    <button id="HC" onclick="document.getElementById('shutter').play()">Home Cooked</button>
+    <button id="TH" onclick="document.getElementById('shutter').play()" >Thai</button>
+    <button id="JP" onclick="document.getElementById('shutter').play()">Japanese</button>
+    <button id="CH" onclick="document.getElementById('shutter').play()">Chinese</button>
+    <button id="DS" onclick="document.getElementById('shutter').play()">Sweet Ones</button>
+    <button id="all" onclick="document.getElementById('shutter').play()">Eat Them All!</button>
+</div>
+
+<hr>
+
+</div>
+    <div id="goodfood" class="flex-container"></div>
+</div>
+
     </main>
-    <script type="text/javascript" src="./script.js" defer></script>
+    <script type="text/javascript" src="./archive.js" defer></script>
+    
   </body>
 </html>  

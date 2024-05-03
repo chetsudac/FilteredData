@@ -1,0 +1,85 @@
+body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: oldlace;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+
+}
+
+hr {
+  border-bottom: solid oldlace 1px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform:uppercase;
+  text-align: center;
+}
+
+img {
+  max-width: 340px;
+  border: solid oldlace 1px;
+  margin: 30px;
+}
+
+.foodpics {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: solid black 1px;
+  border-radius: 999px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: oldlace;
+  color: black;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.filters {
+ display: flex;
+ padding: 10px;
+ width: 100vw;
+justify-content: space-evenly;
+}
+
+.filter {
+  display: flex;
+  justify-items: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+ }
+
+ .foodpics {
+  line-height: 5px;
+ }
+
+h5 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}

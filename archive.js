@@ -69,7 +69,9 @@ data.forEach(item => {
     div.appendChild(title);
     div.appendChild(p);
     eateat.appendChild(div);
+    div.className = "foodpics";
     });
+    
 
 })
 .catch(error => console.error(error));
