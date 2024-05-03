@@ -4,8 +4,8 @@ body {
   font-style: normal;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  color: oldlace;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .title {
@@ -15,7 +15,7 @@ body {
 }
 
 hr {
-  border-bottom: solid oldlace 1px;
+  border-bottom: solid black 1px;
 }
 
 .flex-container {
@@ -28,7 +28,7 @@ hr {
 
 img {
   max-width: 340px;
-  border: solid oldlace 1px;
+  border: solid black 1px;
   margin: 30px;
 }
 
@@ -38,20 +38,25 @@ img {
 }
 
 button {
-  border: solid black 1px;
+  border: solid whitesmoke 1px;
   border-radius: 999px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  background-color: oldlace;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
   text-transform: uppercase;
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
+}
+
+button:hover {
+  background-color: red;
+  transition: 300ms;
 }
 
 .filters {
@@ -78,8 +83,23 @@ justify-content: space-evenly;
 
 h5 {
   font-size: 20px;
+  font-weight: 400;
 }
 
 p {
   font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 499px){
+ 
+}
+
+@media screen and (min-width: 500px) and (max-width: 949px){
+
+
+}
+
+@media screen and (min-width: 950px) {
+
 }
