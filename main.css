@@ -12,11 +12,12 @@ hr {
   border-bottom: solid black 2px;
 }
 
-@media screen and (max-width: 499px){
+@media screen and (max-width: 699px){
   .title {
-    font-size: 45px;
-    line-height: 80px;
+    font-size: 40px;
+    line-height: 30px;
     text-align: center;
+    margin-top: 40px;
   }
 
   .flex-container {
@@ -28,7 +29,7 @@ hr {
   }
   
   img {
-    max-width: 340px;
+    max-width: 350px;
     border: solid black 2px;
     margin: 30px;
   }
@@ -40,38 +41,32 @@ hr {
   }
   
   button {
-    border: solid whitesmoke 1px;
+    border: solid whitesmoke 2px;
     border-radius: 999px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
     background-color: black;
     color: whitesmoke;
     text-transform: uppercase;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-  }
-  
-  button:hover {
-    background-color: red;
-    transition: 300ms;
+    font-size: 20px;
+    margin: 3px;
   }
   
   .filters {
-   display: flex;
-   padding: 10px;
+   display: inline-block;
    width: 100vw;
+   padding: 10px;
   justify-content: space-evenly;
   }
   
   .filter {
-    display: flex;
+    display: inline;
     justify-items: center;
-    padding: 10px;
+    padding: 5px;
     text-transform: uppercase;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 600;
@@ -80,23 +75,27 @@ hr {
    }
   
   h5 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
   }
   
   p {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
   }
   
   #changeBGColorButton {
-    width: 60px;
-    height: 60px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
     border: solid black 2px;
+    background-color: red;
+    margin-left: 180px;
   }
+
 }
 
-@media screen and (min-width: 500px) and (max-width: 949px){
+@media screen and (min-width: 700px) and (max-width: 949px){
   .title {
     font-size: 120px;
     line-height: 100px;
@@ -208,7 +207,7 @@ hr {
   }
   
   button {
-    border: solid black 2px;
+    border: solid whitesmoke 2px;
     border-radius: 999px;
     padding: 10px;
     padding-left: 20px;
@@ -261,5 +260,6 @@ hr {
     width: 60px;
     height: 60px;
     border: solid black 2px;
+    border-radius: 50%;
   }
 }
