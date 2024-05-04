@@ -92,6 +92,12 @@ p {
   font-weight: 600;
 }
 
+#changeBGColorButton {
+  width: 60px;
+  height: 60px;
+  border: solid black 2px;
+}
+
 @media screen and (max-width: 499px){
  
 }

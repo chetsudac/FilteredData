@@ -76,3 +76,43 @@ data.forEach(item => {
 })
 .catch(error => console.error(error));
 
+var button = document.getElementById("changeBGColorButton");
+var originalColor = document.body.style.backgroundColor; // Store the original body color
+var originalTextColors = {}; // Store original text colors
+var isBlack = false; // Variable to track the current color state
+
+// Function to store original text colors
+function storeOriginalTextColors() {
+    var textElements = document.querySelectorAll("body *"); // Get all elements within the body
+    textElements.forEach(function(element) {
+        originalTextColors[element.tagName] = window.getComputedStyle(element).color; // Store computed color
+    });
+}
+
+// Function to change text colors
+function changeTextColors(color) {
+    var textElements = document.querySelectorAll("body *"); // Get all elements within the body
+    textElements.forEach(function(element) {
+        element.style.color = color; // Change text color
+    });
+}
+
+// Store original text colors when the page loads
+storeOriginalTextColors();
+
+button.addEventListener("click", function() {
+    // Toggle between two colors
+    if (!isBlack) {
+        document.body.style.backgroundColor = "black";
+        button.style.backgroundColor = "red"; // Change button color
+        button.style.color = "whitesmoke"; // Change button text color
+        changeTextColors("whitesmoke"); // Change text colors to white
+        isBlack = true;
+    } else {
+        document.body.style.backgroundColor = originalColor;
+        button.style.backgroundColor = ""; // Reset button color
+        button.style.color = ""; // Reset button text color
+        changeTextColors(""); // Reset text colors to original
+        isBlack = false;
+    }
+});
