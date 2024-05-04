@@ -8,105 +8,258 @@ body {
   color: black;
 }
 
-.title {
-  font-size: 160px;
-  line-height: 150px;
-  text-align: center;
-
-}
-
 hr {
   border-bottom: solid black 2px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-transform:uppercase;
-  text-align: center;
-}
-
-img {
-  max-width: 340px;
-  border: solid black 2px;
-  margin: 30px;
-}
-
-.foodpics {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  border: solid whitesmoke 1px;
-  border-radius: 999px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color: black;
-  color: whitesmoke;
-  text-transform: uppercase;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-}
-
-button:hover {
-  background-color: red;
-  transition: 300ms;
-}
-
-.filters {
- display: flex;
- padding: 10px;
- width: 100vw;
-justify-content: space-evenly;
-}
-
-.filter {
-  display: flex;
-  justify-items: center;
-  padding: 10px;
-  text-transform: uppercase;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 20px;
- }
-
- .foodpics {
-  line-height: 5px;
- }
-
-h5 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-p {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-#changeBGColorButton {
-  width: 60px;
-  height: 60px;
-  border: solid black 2px;
-}
-
 @media screen and (max-width: 499px){
- 
+  .title {
+    font-size: 45px;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform:uppercase;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 340px;
+    border: solid black 2px;
+    margin: 30px;
+  }
+  
+  .foodpics {
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+  }
+  
+  button {
+    border: solid whitesmoke 1px;
+    border-radius: 999px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: red;
+    transition: 300ms;
+  }
+  
+  .filters {
+   display: flex;
+   padding: 10px;
+   width: 100vw;
+  justify-content: space-evenly;
+  }
+  
+  .filter {
+    display: flex;
+    justify-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+   }
+  
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  #changeBGColorButton {
+    width: 60px;
+    height: 60px;
+    border: solid black 2px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 949px){
+  .title {
+    font-size: 120px;
+    line-height: 100px;
+    text-align: center;
+  }
 
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform:uppercase;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 700px;
+    border: solid black 2px;
+    margin: 30px;
+  }
+  
+  .foodpics {
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+  }
+  
+  button {
+    border: solid whitesmoke 2px;
+    border-radius: 999px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin: 3px;
+  }
+  
+  .filters {
+   display: inline-block;
+   width: 100vw;
+   padding: 10px;
+  justify-content: space-evenly;
+  }
+  
+  .filter {
+    display: inline;
+    justify-items: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+   }
+  
+  h5 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  #changeBGColorButton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid black 2px;
+    background-color: red;
+    margin-left: 100px;
+  }
 
 }
 
 @media screen and (min-width: 950px) {
+  .title {
+    font-size: 160px;
+    line-height: 150px;
+    text-align: center;
+  }
 
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform:uppercase;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 340px;
+    border: solid black 2px;
+    margin: 30px;
+  }
+  
+  .foodpics {
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+  }
+  
+  button {
+    border: solid black 2px;
+    border-radius: 999px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: red;
+    transition: 300ms;
+  }
+  
+  .filters {
+   display: flex;
+   padding: 10px;
+   width: 100vw;
+  justify-content: space-evenly;
+  }
+  
+  .filter {
+    display: flex;
+    justify-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+   }
+  
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  #changeBGColorButton {
+    width: 60px;
+    height: 60px;
+    border: solid black 2px;
+  }
 }
